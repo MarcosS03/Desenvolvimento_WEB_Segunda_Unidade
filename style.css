@@ -5,11 +5,42 @@ body {
 }
 
 
-container-menu {
+.container-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 20px;
+    margin: auto;
+    
 }
 
+.container-menu li {
+    position:relative;
+    float:left;
+    border-right:1px solid #c0c0c0;
+    display: flex;
+    margin: 20px;
+    
+}
+.cadastro{
+    display: flexbox;
+    justify-content: center;
+    
+    
+}
+.botao{
 
+    display: flex;   /* inicia o display flex */
+    align-items: center; /* alinha os itens na vertical */
+    justify-content: center; /* alinha os itens na horizontal */
+  
+    background-color: rgb(29, 155, 240);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    width: 550px;**
+  
+  }
