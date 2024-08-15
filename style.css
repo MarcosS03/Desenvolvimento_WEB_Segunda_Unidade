@@ -9,22 +9,50 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px;
     margin: auto;
     
+    
 }
-
-.container-menu li {
-    position:relative;
+  
+  .container-menu li {
+   
     float:left;
     border-right:1px solid #c0c0c0;
     display: flex;
-    margin: 20px;
+    background-color: rgb(145, 205, 240);
+    border-radius: 20px;
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+    
+    
+    
     
 }
+
+
+
+.container-menu li a{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+
 .cadastro{
-    display: flexbox;
-    justify-content: center;
+    text-align: center;
+    background-color: #abc4d4;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     
     
 }
@@ -32,15 +60,15 @@ body {
 
     display: flex;   /* inicia o display flex */
     align-items: center; /* alinha os itens na vertical */
-    justify-content: center; /* alinha os itens na horizontal */
-  
+    justify-content: center; /* alinha os itens na horizontal */ 
     background-color: rgb(29, 155, 240);
     border-radius: 5px;
     padding: 1em;
     color: var(--branco-principal);
     display: block;
     text-decoration: none;
-    margin-bottom: 1em;
-    width: 550px;**
+    margin-bottom: 10%;
+    width: 100%;
+    height: auto;
   
   }
