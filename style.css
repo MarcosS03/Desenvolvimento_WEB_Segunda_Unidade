@@ -14,8 +14,14 @@ body {
     
     
 }
-  
-  .container-menu li {
+
+ul.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ 
+.container-menu li {
    
     float:left;
     border-right:1px solid #c0c0c0;
@@ -30,7 +36,6 @@ body {
     
     
 }
-
 
 
 .container-menu li a{
