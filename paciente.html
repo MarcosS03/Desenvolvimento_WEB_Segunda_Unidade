@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="javaS.js"></script>
+    <title>Paciente</title>
+    
+</head>
+
+<header>
+    <div class="container-menu">
+        <div class="logo">
+            <img src="imgs/IntitutoFederal-aplicações-verticais.png"  alt="Logo do IFPE" height="70px" width="70px">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+
+    <div class="forms-container">
+        <div class="labels-container">
+            <label for="patienteName">Nome:</label>
+            <label for="patienteDateBirth">Data de nascimento:</label>
+            <label for="patienteDateBirth">Nome da mãe do paciente:</label>
+            <label for="dateExamination">Data do exame:</label>
+            <label for="Medicalspecialty">Especialidade:</label>
+        </div>
+
+        <form class="cadPaciente-form">
+                <input
+                    type="text"
+                    class="cadPaciente-form"
+                    id="patienteName"
+                    name="patienteName"
+                    maxlength= "100"
+                    placeholder="Digite o nome do paciente"/>
+                
+                <input
+                    type="date"
+                    class="cadPaciente-form"
+                    id="patienteDateBirth"
+                    name="patienteDateBirth"
+                    placeholder="Digite a data de nascimento do paciente"/>
+
+                <input
+                    type="text"
+                    class="cadPaciente-form"
+                    id="patienteMotherName"
+                    name="patienteMotherName"
+                    maxlength= "100"
+                    placeholder="Digite o nome da mãe do paciente"/>
+
+                <input
+                    type="date"
+                    class="cadPaciente-form"
+                    id="dateExamination"
+                    name="dateExamination"
+                    placeholder="Digite a data do exame do paciente"/>
+
+                <input
+                    type="text"
+                    class="cadPaciente-form"
+                    id="Medicalspecialty"
+                    name="Medicalspecialty"
+                    placeholder="Digite a especialidade  buscada pelo paciente"/>
+        </form>
+    </div>
+</body>
+
+<footer>
+
+</footer>
+</html>

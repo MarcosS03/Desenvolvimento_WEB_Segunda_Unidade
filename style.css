@@ -77,3 +77,34 @@ ul.menu {
     height: auto;
   
   }
+
+.forms-container{
+    display: flex;
+    align-items: flex-start;
+    width: auto;
+    margin: 5%;
+    justify-content: center;
+}
+
+.labels-container{
+    margin-right: 5%;
+}
+
+.labels-container label{
+    display: block;
+    margin-bottom: 3%;
+    text-align: right;
+    width: 100%;
+    left: 100%;
+}
+
+.cadPaciente-form input{
+    display: block;
+    margin-bottom: 1%;
+    width: 200px;
+}
+
+input[type="text"], input[type="date"] {
+    width: 300px;
+}
+
