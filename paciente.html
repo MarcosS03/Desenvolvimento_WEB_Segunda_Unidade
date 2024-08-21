@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script src="javaS.js"></script>
+    <script src="javascript.js"></script>
     <title>Paciente</title>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        dl {
+            display: none;
+            margin: 0;
+        }
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        dd {
+            margin: 0 0 10px 20px;
+        }
+        .doctor-lista {
+            display: flex;
+            align-items: flex-start;
+            width: auto;
+            margin: 5%;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <header>
@@ -68,11 +91,80 @@
                 <input
                     type="text"
                     class="cadPaciente-form"
-                    id="Medicalspecialty"
+                    id="searchInput"
                     name="Medicalspecialty"
                     placeholder="Digite a especialidade  buscada pelo paciente"/>
         </form>
     </div>
+    
+    <div class = "doctor-lista">
+
+        <dl id = "dataList">
+            <dt>Clinica</dt>
+                <dd>
+                    Nome: Dr.ª Maria<br>
+                    Experiência: 20 anos
+                </dd>
+            <dt>Pediatria</dt>
+                <dd>
+                    Nome: Dr.º José<br>
+                    Experiência: 18 anos
+                </dd>
+            <dt>Oncologista</dt>
+                <dd>
+                    Nome: Dr.ª Josefa<br>
+                    Experiência: 23 anos
+                </dd>    
+            <dt>Cardiologia</dt>
+                <dd>
+                    Nome: Dr.º Mario<br>
+                    Experiência: 15 anos
+                </dd>
+        </dl>
+    </div>
+    <script>
+        const searchInput = document.getElementById('searchInput');
+            const dataList = document.getElementById('dataList');
+            const terms = dataList.getElementsByTagName('dt');
+            const definitions = dataList.getElementsByTagName('dd');
+            
+            searchInput.addEventListener('input', function() {
+                const filter = searchInput.value.toLowerCase();
+            
+                if (filter) {
+                    dataList.style.display = 'block';
+                } else {
+                    dataList.style.display = 'none';
+                }
+            
+                let hasVisibleItems = false;
+                for (let i = 0; i < terms.length; i++) {
+                    const term = terms[i];
+                    const definition = definitions[i];
+                    const text = term.textContent || term.innerText;
+            
+                    if (text.toLowerCase().indexOf(filter) > -1) {
+                        term.style.display = '';
+                        definition.style.display = '';
+                        hasVisibleItems = true;
+                    } else {
+                        term.style.display = 'none';
+                        definition.style.display = 'none';
+                    }
+                }
+            
+                if (!hasVisibleItems) {
+                    dataList.style.display = 'none';
+                }
+            });
+
+            for (let i = 0; i < terms.length; i++) {
+            terms[i].addEventListener('click', function() {
+                searchInput.value = this.textContent || this.innerText; // Preenche o campo de entrada com o texto do termo
+                dataList.style.display = 'none'; // Oculta a lista após a seleção
+            });
+        }
+    </script>
 </body>
 
 <footer>

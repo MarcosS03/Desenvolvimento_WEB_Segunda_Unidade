@@ -104,7 +104,24 @@ ul.menu {
     width: 200px;
 }
 
-input[type="text"], input[type="date"] {
+.cadPaciente-form input[type="text"], input[type="date"] {
     width: 300px;
 }
 
+.doctor-lista dl {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+.doctor-lista dt, dd {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.doctor-lista dt:hover {
+    background-color: #e2e2e2;
+}
