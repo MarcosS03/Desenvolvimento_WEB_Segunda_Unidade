@@ -82,8 +82,13 @@ ul.menu {
     display: flex;
     align-items: flex-start;
     width: auto;
+    border: 30px solid blue;
+    border-radius: 10px
+    ;
+    border-color: #abc4d4;
     margin: 5%;
     justify-content: center;
+    background-color: #abc4d4;
 }
 
 .labels-container{
@@ -105,7 +110,7 @@ ul.menu {
 }
 
 .cadPaciente-form input[type="text"], input[type="date"] {
-    width: 300px;
+    width: 200%;
 }
 
 .doctor-lista dl {
