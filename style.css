@@ -131,73 +131,46 @@ ul.menu {
     background-color: #55b0ce;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
-    align-items: flex-start;
     gap: 20px;
-    max-width: 800px;
-    width: 100%;
-    margin-bottom: 20px;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 5%;
   }
-  .photo-container {
-    border: 1px solid #ccc;
-    padding: 2px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  .photo-container img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  .info-container {
-    width: 100%;
-  }
-  .info-container h1 {
-    font-size: 18px;
-    margin: 0 0 10px 0;
-    text-align: center;
-  }
-  .info-container label {
-    display: block;
-    margin-bottom: 4px;
-    font-size: 14px;
-  }
-  .info-container input {
-    width: 100%;
-    padding: 6px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    box-sizing: border-box;
-  }
-  .info-container p {
-    margin: 6px 0;
-    font-size: 14px;
-  }
-  .info-container span {
-    font-weight: bold;
-  }
 
-
-  .body-medico {
-    font-family: Arial, sans-serif;
-    background-color: #55b0ce;
+  .nome-medico {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
+    justify-content: center;
     box-sizing: border-box;
-    overflow-y: auto;
+    
+  }
+
+  .photo-container img {
+ 
+    display: block;
+    border-radius: 50px;
+    align-content: center;
+    margin: auto;
+
+    
+    
+  }
+
+  .informacoes-medico {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 20px;
+    margin-right: 10%;
+    
+    
+  }
+  
+  .informacoes-medico p {
+    padding: 30px;
+    margin-right: 10px;
+    
+
   }
