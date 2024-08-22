@@ -206,3 +206,70 @@ ul.menu {
     box-sizing: border-box;
     overflow-y: auto;
   }
+
+
+/* Estilo para o container do formulário */
+.contact-contaniner{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #91ace6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os títulos */
+.contact-contaniner h2{
+  display: flex;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo para o grupo de formulários */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para os rótulos */
+.form-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #444444;
+}
+
+/* Estilo para os inputs e textarea */
+.form-group input,
+.form-group textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Estilo para o input e textarea quando em foco */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.button-container {
+  text-align: center;
+  background-color: white;
+  color: #4CAF50; /* Verde */
+  padding: 14px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-container button:hover {
+  background-color: #4CAF50;
+  color: white;
+}

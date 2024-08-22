@@ -7,6 +7,18 @@
     <script src="javaS.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Contatos</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="javascriptMail.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "zg4R1R_BP4fiRyTgk",
+            });
+        })();
+    </script>
 </head>
 
 <header>
@@ -24,11 +36,62 @@
     </div>
 </header>
 <body>
-<<<<<<< HEAD:contatos.htm
-    
-=======
-   
->>>>>>> 926ceed4253837bb61d655fa89785668c9c7958a:contatos.html
+    <div class="contact-container">
+        <h2>Fale conosco</h2>
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input
+                type="text"
+                class="contact-containerl"
+                id="name"
+                name="name"
+                placeholder="Digite o seu nome" required/>
+            <br>
+
+            <label for="email">E-mail:</label>
+            <input
+                type="email"
+                class="contact-container"
+                id="email"
+                name="email"
+                placeholder="Digite o seu email" required/>
+            <br>
+
+            <label for="telefone">Telefone:</label>
+            <input
+                type="tel"
+                class="contact-container"
+                id="telefone"
+                name="telefone" 
+                placeholder="(11) 1 11111111" required/>
+            <br>
+
+            <script>
+                document.getElementById('telefone').addEventListener('input', function (e) {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length > 11) value = value.slice(0, 11);
+            
+                if (value.length >= 2) {
+                    value = `(${value.slice(0, 2)}) ` + value.slice(2);
+                }
+                e.target.value = value;
+                });
+            </script>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+                rows="5"
+                class="contact-container"
+                id="mensagem"
+                name="mensagem">
+            </textarea>
+            <br>
+        </div>
+
+        <div class="button-container">
+            <button onclick="sendMail()">Enviar</button>
+        </div>
+    </div>
 </body>
 
 <footer>
